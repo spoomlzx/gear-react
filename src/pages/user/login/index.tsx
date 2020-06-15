@@ -100,6 +100,7 @@ const Login: React.FC<{}> = () => {
               )}
 
               <Username
+                defaultValue="admin"
                 name="username"
                 placeholder="用户名: admin or user"
                 rules={[
@@ -110,6 +111,7 @@ const Login: React.FC<{}> = () => {
                 ]}
               />
               <Password
+                defaultValue="ant.design"
                 name="password"
                 placeholder="密码: ant.design"
                 rules={[
