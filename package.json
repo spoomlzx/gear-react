@@ -31,25 +31,45 @@
     "test:component": "umi test ./src/components",
     "tsc": "tsc"
   },
-  "husky": { "hooks": { "pre-commit": "npm run lint-staged" } },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
+  },
   "lint-staged": {
     "**/*.less": "stylelint --syntax less",
     "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
-    "**/*.{js,jsx,tsx,ts,less,md,json}": ["prettier --write"]
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "prettier --write"
+    ]
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 10"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
   "dependencies": {
+    "@ant-design/charts": "^0.9.4",
     "@ant-design/icons": "^4.0.0",
     "@ant-design/pro-layout": "6.0.0-3",
     "@ant-design/pro-table": "^2.2.0",
+    "@antv/g2plot": "^1.1.6",
+    "@types/lodash.isequal": "^4.5.5",
+    "@umijs/hooks": "^1.9.3",
     "antd": "^4.0.0",
     "classnames": "^2.2.6",
+    "core-js": "^3.6.5",
     "lodash": "^4.17.15",
+    "lodash-decorators": "^6.0.1",
+    "lodash.isequal": "^4.5.0",
     "moment": "^2.25.3",
+    "numeral": "^2.0.6",
+    "nzh": "^1.0.4",
     "omit.js": "^1.0.2",
     "qs": "^6.9.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router": "^4.3.1",
     "umi": "^3.1.0",
     "umi-request": "^1.0.8",
     "use-merge-value": "^1.0.1"
@@ -86,5 +106,7 @@
     "puppeteer-core": "^2.1.1",
     "stylelint": "^13.0.0"
   },
-  "engines": { "node": ">=10.0.0" }
+  "engines": {
+    "node": ">=10.0.0"
+  }
 }
