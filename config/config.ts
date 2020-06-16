@@ -2,7 +2,6 @@
 import { defineConfig } from 'umi';
 import defaultSettings from './defaultSettings';
 import proxy from './proxy';
-
 const { REACT_APP_ENV } = process.env;
 export default defineConfig({
   hash: true,
@@ -46,6 +45,12 @@ export default defineConfig({
       name: 'dashboard',
       icon: 'smile',
       component: './DashBoard',
+    },
+    {
+      name: 'community',
+      icon: 'smile',
+      path: '/community',
+      component: './Community',
     },
     {
       path: '/admin',
